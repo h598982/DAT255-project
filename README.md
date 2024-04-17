@@ -2,7 +2,9 @@
 
 # Innledning 
 I faget DAT 255 deep learning engineering ble vi bedt om å velge et prosjekt som skulle være en god kilde til læring. Det ble presentert en katalog med mange valg, men på grunn av interessen for medisin valgte vi oppgaven «Chest X-rays» som handler om å identifisere sykdommer basert på røntgen bilder av brystet til pasienter.
+
 Maskinlæring innen medisinfeltet er svært spennende og har et gigantisk potensial for fremtiden. Kunstig intelligens kan være med på å forbedre alt fra nøyaktigheten i diagnostikk til personalisering av behandlingsplaner. Teknologi som dyp læring har allerede vist seg verdifullt innen bildediagnostikk hvor de kan se mønstre og anomalier som selv eksperter fort kan overse. Prosjektet som har blitt utført er en smakebit for to studenter innenfor denne spennende teknologien som kan og mest sannsynlig vil bli et viktig verktøy innenfor moderne medisin.
+
 Målet med dette prosjektet er å klare å identifisere en eller fler av totalt 14 forskjellige tilstander hos et menneske gjennom å analysere et røntgenbilde av brystpartiet. I tillegg til at vi skal kunne identifisere tilstander vil også fremstillingen av resultat og analyse være sentralt. 
 
 # Metode
@@ -23,6 +25,7 @@ Resultatet vi endte opp med ved prosjekt slutt var rundt 84%, men valgte å ikke
 # Diskusjon
 
 Arbeidet med dette prosjektet har vært lærerikt og interessant, men blitt delvis nedprioritert på grunn av bachelor oppgaven som har blitt arbeidet med samtidig. Det er flere ting som vi gjerne skulle arbeidet mer med for å forbedre modellen, men alt i alt har vi klart å lage en nokså god modell som kan identifisere opp til 14 tilstander ut ifra en røntgen av brystpartiet. Vi har også klart å presentere dette på en måte som gir folk forståelse av hva modellen ser på for å avgjøre tilstandene.
+
 Det vi gjerne skulle ønsket vi kunne fått tid til å arbeide videre med handler hovedsakelig om forberedelsen av dataen før man trener modellen. Hovedsakelig er det to ting vi hadde ønsket å prøve ut for å forbedre modellen. Det første er håndteringen av usikker tilstand (-1 verdi), måten vi gjorde dette på er uten tvil ikke den beste måten. Vi tenkte på hva vi kunne gjøre, men kom ikke frem til et endelig svar siden vi følte det krevde forståelse av røntgen bilder noe vi ikke har. Det andre vi gjerne skulle fått gjort hadde vært å slå sammen både trenings og valideringssettet og lagd et eget valideringssett som hadde flere representasjoner i seg. Etter vi lagde forvirringsmatrisen så vi at valideringssettet kun hadde negative eller positive tilfeller av en tilstand i seg. Dette kan føre til at resultatet vårt på 84% kanskje ikke er så reelt hvis den hadde blitt brukt på ny data. Dette grunnes av at modellen er fant ut at den alltid kunne si at en tilstand ikke var til stede og få riktig nesten hver gang. Vi ønsker derfor å bygge valideringssettet på en måte som sørger for at alle tilstandene er representert relativt likt. Dette vil føre til at modellen vil se mye flere forskjellige cases og gjøre den mer robust mot det virkelige liv. Dette kan også føre til at modellen sin accuracy går ned, men kan også føre til at den forbedres.
 
 # Prosjekt link (offentlig prosjekt)
